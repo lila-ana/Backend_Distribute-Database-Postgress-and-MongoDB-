@@ -1,0 +1,19 @@
+require('dotenv').config();
+
+const APP_PORT = process.env.APP_PORT || 3000;
+const APP_MONGO_URI = process.env.MONGODB_URI;
+const POSTGRES_HOST = process.env.POSTGRES_HOST;
+const POSTGRES_PORT = process.env.POSTGRES_PORT;
+const POSTGRES_USERNAME = process.env.POSTGRES_USERNAME || '778354';
+const POSTGRES_PASSWORD = process.env.POSTGRES_PASSWORD;
+const POSTGRES_DATABASE = process.env.POSTGRES_DATABASE;
+
+module.exports = {
+  APP_PORT,
+  APP_MONGO_URI,
+  POSTGRES_HOST,
+  POSTGRES_PORT,
+  POSTGRES_USERNAME,
+  POSTGRES_PASSWORD,
+  POSTGRES_DATABASE,
+};
